@@ -53,10 +53,7 @@ if __name__ == '__main__':
             row_cells = list(row)
             first_name = str(row_cells[0].value)
             last_name = str(row_cells[1].value)
-            #if 'First' in first_name and 'Last' in last_name:
-            #    continue
             order = str(row_cells[2].value)
-            #if order and 'I will not purchase a boxed lunch.' not in order:
             if create_overlay(first_name+' '+last_name, order):
                 merge_pdfs(sys.argv[3],
                        'overlay.pdf',
