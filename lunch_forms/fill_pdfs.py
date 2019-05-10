@@ -43,7 +43,7 @@ def merge_pdfs(form_pdf, overlay_pdf, output):
 
 
 if __name__ == '__main__':
-    if len(sys.argv) < 2 or sys.argv[1] == '--help':
+    if len(sys.argv) < 4:
         print('Usage: python3 fill_pdfs.py [excel workbook] [sheet name] [pdf template]')
     else:
         wb = load_workbook(filename=sys.argv[1], read_only=True)
